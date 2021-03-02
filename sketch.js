@@ -50,10 +50,10 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 
-	box1 = Bodies.rectangle(width/2, 20, width, 20, {isStatic:true});
+	box1B = Bodies.rectangle(width/2, 20, width, 20, {isStatic:true});
 	World.add(world, ground);
 
-	box2 = Bodies.rectangle(width/2, 20, width, 20, {isStatic:true});
+	box2B = Bodies.rectangle(width/2, 20, width, 20, {isStatic:true});
 	World.add(world, ground);
 
 
@@ -67,6 +67,12 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
+	
+	box1.x=box1B.position.x;
+	box1.y=box1B.position.y;
+	
+	box2.x=box2B.position.x;
+	box2.y=box2B.position.y;
   drawSprites();
  
 }
